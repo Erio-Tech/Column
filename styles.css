@@ -1,0 +1,156 @@
+  *{
+      box-sizing: border-box;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      
+  }
+  
+  
+  .attribution {
+      font-size: 12px;
+      text-align: center;
+      font-family: 'Lexend Deca',
+      sans-serif;
+      ;
+  }
+
+  .attribution a {
+      color: hsl(228, 45%, 44%);
+  } 
+  .container{
+      display: flex;
+      width:50%;
+      margin: 0 auto;
+  }
+
+.car {
+    padding: 15px;
+    height: 60vh;
+    margin: 100px auto;
+
+
+}
+
+  .sedan {
+    background: hsl(31, 77%, 52%);
+}
+
+.suv{
+     background:  hsl(184, 100%, 22%);
+}
+.luxury {
+ background:    hsl(179, 100%, 13%);
+}
+
+
+h1, h2, h3{
+color:hsl(0, 0%, 95%);
+font-family: 'Big Shoulders Display',
+;
+font-weight: 700;
+font-size: 1.5rem;
+padding-top: 20px ;
+}
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+    max-width: 95%;
+    line-height:1.5;
+}
+.Btn{
+        background-color: hsl(0, 0%, 95%);
+        /* Green */
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 40px 35px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 150px;
+        padding: 5px 25px;
+        font-family: 'Lexend Deca';
+        width: 150px;
+    
+
+}
+.sedans{
+    color:hsl(31, 77%, 52%);
+
+}
+.sedans:hover{
+    background-color:hsl(31, 77%, 52%);
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+
+}
+.Suvs{
+ color: hsl(184, 100%, 22%);
+ 
+}
+
+.Suvs:hover {
+    background-color:hsl(184, 100%, 22%);
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.lux{
+    color:hsl(179, 100%, 13%);
+}
+.lux:hover{
+    background-color:hsl(179, 100%, 13%);
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:1400px) {
+    .container{
+        flex-direction:column;
+        margin-top: 100px;
+        margin-left:48px
+    }
+.car{
+margin: 0 auto;
+padding-bottom:500px;
+padding-top:0 ;
+
+}
+h1, h2, h3{
+font-size:2.5em;
+}
+
+p{
+    font-size: 1.2em;
+}
+.Btn{
+    font-size: 1em;
+    width:150px;
+}
+
+
+    }
+
+    @media screen and (min-width:1024px) {
+
+        .container{
+            flex-direction:row;
+            
+        }
+       
+        .Suvs {
+            margin-top: 30px;
+    }
+.lux{
+    margin-top: 20px;
+}
+
+    }
